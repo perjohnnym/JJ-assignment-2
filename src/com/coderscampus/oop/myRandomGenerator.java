@@ -6,13 +6,13 @@ public class myRandomGenerator {
 
     public static void main(String[] args) {
 
-//Here we generate a random number betweeen 1 and 100n inclusive
+        // Here we generate a random number between 1 and 100 inclusive
         int generatedNumber = getGeneratedNumber();
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);     // DN: SCAN IS UNDERLINED IN ORANGE BECAUSE SCANNER HAS NOT BEEN CLOSED. I WOULD TRY AND CLOSE THAT.
         System.out.println("Pick a number between 1 and 100:  ");
         String usersGuess = scan.nextLine();
-        System.out.println("you typed in:  " + usersGuess);
+//        System.out.println("you typed in:  " + usersGuess);     // DN: DON'T NEED THIS LINE
         int yourGuess = Integer.parseInt(usersGuess);
 
         int guessAttempt = 1;
@@ -29,11 +29,11 @@ public class myRandomGenerator {
 
             /* this will throw error message when user guesses outside of range */
             if (yourGuess < 1 || yourGuess > 100) {
-                System.out.println("you guessed out of range; your number must be between 1 and 100");
+                System.out.println("You guessed out of range; your number must be between 1 and 100");
                 scan = new Scanner(System.in);
                 System.out.println("Pick a number between 1 and 100:  ");
                 usersGuess = scan.nextLine();
-                System.out.println("you typed in:  " + usersGuess);
+//                System.out.println("you typed in:  " + usersGuess);     // DN: DON'T NEED THIS LINE
                 yourGuess = Integer.parseInt(usersGuess);
             }
 
@@ -51,7 +51,7 @@ public class myRandomGenerator {
                     scan = new Scanner(System.in);
                    // System.out.println("Pick a number between 1 and 100:  ");
                     usersGuess = scan.nextLine();
-                    System.out.println("you typed in:  " + usersGuess);
+//                    System.out.println("you typed in:  " + usersGuess);     // DN: DON'T NEED THIS LINE
                     yourGuess = Integer.parseInt(usersGuess);
                     validGuess = validGuess + 1;
                     guessAttempt = guessAttempt + 1;
@@ -61,7 +61,7 @@ public class myRandomGenerator {
                     scan = new Scanner(System.in);
                  //   System.out.println("Pick a number between 1 and 100:  ");
                     usersGuess = scan.nextLine();
-                    System.out.println("you typed in:  " + usersGuess);
+//                    System.out.println("you typed in:  " + usersGuess);     // DN: Don't need this line
                     yourGuess = Integer.parseInt(usersGuess);
                     validGuess = validGuess + 1;
                     guessAttempt = guessAttempt + 1;
@@ -75,7 +75,7 @@ public class myRandomGenerator {
         }
         if (guessAttempt > 4){
             System.out.println("You lose!");
-            System.out.println("The number to guess was " + generatedNumber);
+            System.out.println("The number to guess was: " + generatedNumber);
         }
     }
 
