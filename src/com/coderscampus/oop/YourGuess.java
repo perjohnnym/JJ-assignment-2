@@ -2,7 +2,7 @@ package com.coderscampus.oop;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class YourGuess {
 
     public static void main(String[] args) {
 
