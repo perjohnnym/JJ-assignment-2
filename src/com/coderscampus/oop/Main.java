@@ -19,6 +19,8 @@ public class Main {
 
         System.out.println("Pick a number between 1 and 100:  ");
         yourGuess youGuessed = new yourGuess();
+
+        //get user's guess
         int youPredicted = youGuessed.getYourGuess();
 
         while (guessAttempt < 5) {
@@ -27,7 +29,7 @@ public class Main {
           if (youPredicted < 1 || youPredicted > 100) {
                System.out.println("Your guess is not between 1 and 100, please try again");
 
-               youGuessed = new yourGuess();
+               //get users guess
                youPredicted = youGuessed.getYourGuess();
             }
 
