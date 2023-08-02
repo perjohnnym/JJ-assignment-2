@@ -1,7 +1,7 @@
 package com.coderscampus.oop;
 import java.util.Random;
 
-public class myRandomGenerator {
+public class MyRandomGenerator {
 
  //   int generatedNumber = getGeneratedNumber();
 

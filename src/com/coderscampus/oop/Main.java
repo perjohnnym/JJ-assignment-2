@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
 //Here we generate a random number betweeen 1 and 100, inclusive
-        myRandomGenerator getNo = new myRandomGenerator();
+        MyRandomGenerator getNo = new MyRandomGenerator();
         int generatedNumber = getNo.getGeneratedNumber();
 
 
@@ -18,43 +18,44 @@ public class Main {
         int youWin = 0;
 
         System.out.println("Pick a number between 1 and 100:  ");
-        yourGuess youGuessed = new yourGuess();
+        YourGuess youGuessed = new YourGuess();
 
         //get user's guess
         int youPredicted = youGuessed.getYourGuess();
 
-        while (guessAttempt < 5) {
+        while (guessAttempt <= 4 & youWin == 0) {
 
             /* this will throw error message when user guesses outside of range */
-          if (youPredicted < 1 || youPredicted > 100) {
-               System.out.println("Your guess is not between 1 and 100, please try again");
-
-               //get users guess
-               youPredicted = youGuessed.getYourGuess();
+            if (youPredicted < 1 || youPredicted > 100) {
+                System.out.println("Your guess is not between 1 and 100, please try again");
+                guessAttempt = guessAttempt - 1;
+                //get users guess
+                youPredicted = youGuessed.getYourGuess();
             }
 
             //This is when user guesses a number within range
             if (youPredicted > 0 && youPredicted <= 100) {
 
-                if (youPredicted == generatedNumber) {
-                    System.out.println("You win! ");
-                    validGuess = validGuess + 1;
-                    guessAttempt = 6;
-                    youWin = 1;
-                } else if (youPredicted < generatedNumber) {
+                if (youPredicted < generatedNumber) {
                     System.out.println("Please pick a higher number.");
                     // Capture new guess from user
-                    youGuessed = new yourGuess();
+                    youGuessed = new YourGuess();
                     youPredicted = youGuessed.getYourGuess();
                     validGuess = validGuess + 1;
                     guessAttempt = guessAttempt + 1;
                 } else if (youPredicted > generatedNumber) {
                     System.out.println("Please pick a lower number.");
                     // Capture new user's guess
-                    youGuessed = new yourGuess();
+                    youGuessed = new YourGuess();
                     youPredicted = youGuessed.getYourGuess();
                     validGuess = validGuess + 1;
                     guessAttempt = guessAttempt + 1;
+                }
+                if (youPredicted == generatedNumber) {
+                    System.out.println("You win! ");
+                    validGuess = validGuess + 1;
+                    guessAttempt = guessAttempt + 1;
+                    youWin = 1;
                 }
             }// end of within range
 
@@ -63,9 +64,7 @@ public class Main {
             System.out.println("You lose!");
             System.out.println("The number to guess was " + generatedNumber);
         }
-
     }
-
     }
 
 

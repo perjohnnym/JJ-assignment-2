@@ -1,7 +1,7 @@
 package com.coderscampus.oop;
 import java.util.Scanner;
 
-public class yourGuess {
+public class YourGuess {
 
 
 
