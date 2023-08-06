@@ -9,7 +9,6 @@ public class Main {
         MyRandomGenerator getNo = new MyRandomGenerator();
         int generatedNumber = getNo.getGeneratedNumber();
 
-
         Scanner scan;
         String usersGuess;
 
@@ -28,7 +27,7 @@ public class Main {
             /* this will throw error message when user guesses outside of range */
             if (youPredicted < 1 || youPredicted > 100) {
                 System.out.println("Your guess is not between 1 and 100, please try again");
-                guessAttempt = guessAttempt - 1;
+
                 //get users guess
                 youPredicted = youGuessed.getYourGuess();
             }

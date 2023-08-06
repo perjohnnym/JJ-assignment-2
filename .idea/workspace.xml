@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33b12e95-eb32-4f0b-814c-68b4aec07966" name="Changes" comment="Removed excess comments and removed redundant variable">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="33b12e95-eb32-4f0b-814c-68b4aec07966" name="Changes" comment="Fixed bug noted: Hi John Moreno, when I input a correct guess on my 5th attempt, system erroneously throws an error.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/coderscampus/oop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coderscampus/oop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/coderscampus/oop/myRandomGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coderscampus/oop/MyRandomGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/coderscampus/oop/yourGuess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/coderscampus/oop/YourGuess.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +26,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/com/coderscampus/oop/Main.java" root0="SKIP_INSPECTION" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2StxzvWHoPEYqD4eEC1gBNafQw1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -46,6 +43,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/juanjmore33/CodersCampus/java-bootcamp-week5&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -99,7 +97,10 @@
       <workItem from="1690844089186" duration="1089000" />
       <workItem from="1690891028602" duration="348000" />
       <workItem from="1690907947852" duration="1904000" />
-      <workItem from="1690936761866" duration="2664000" />
+      <workItem from="1690936761866" duration="3505000" />
+      <workItem from="1691107147496" duration="75000" />
+      <workItem from="1691186895093" duration="932000" />
+      <workItem from="1691333732451" duration="1197000" />
     </task>
     <task id="LOCAL-00001" summary="Removed excess comments.">
       <option name="closed" value="true" />
@@ -117,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690642082612</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed bug noted: Hi John Moreno, when I input a correct guess on my 5th attempt, system erroneously throws an error.">
+      <option name="closed" value="true" />
+      <created>1690939893934</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690939893934</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +135,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Removed excess comments." />
     <MESSAGE value="Removed excess comments and removed redundant variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed excess comments and removed redundant variable" />
+    <MESSAGE value="Fixed bug noted: Hi John Moreno, when I input a correct guess on my 5th attempt, system erroneously throws an error." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug noted: Hi John Moreno, when I input a correct guess on my 5th attempt, system erroneously throws an error." />
   </component>
 </project>
