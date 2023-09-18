@@ -20,37 +20,37 @@ public class Main {
         YourGuess youGuessed = new YourGuess();
 
         //get user's guess
-        int youPredicted = youGuessed.getYourGuess();
+        int userPredicted = youGuessed.getYourGuess();
 
         while (guessAttempt <= 4 & youWin == 0) {
 
             /* this will throw error message when user guesses outside of range */
-            if (youPredicted < 1 || youPredicted > 100) {
+            if (userPredicted < 1 || userPredicted > 100) {
                 System.out.println("Your guess is not between 1 and 100, please try again");
 
                 //get users guess
-                youPredicted = youGuessed.getYourGuess();
+                userPredicted = youGuessed.getYourGuess();
             }
 
             //This is when user guesses a number within range
-            if (youPredicted > 0 && youPredicted <= 100) {
+            if (userPredicted > 0 && userPredicted <= 100) {
 
-                if (youPredicted < generatedNumber) {
+                if (userPredicted < generatedNumber) {
                     System.out.println("Please pick a higher number.");
                     // Capture new guess from user
                     youGuessed = new YourGuess();
-                    youPredicted = youGuessed.getYourGuess();
+                    userPredicted = youGuessed.getYourGuess();
                     validGuess = validGuess + 1;
                     guessAttempt = guessAttempt + 1;
-                } else if (youPredicted > generatedNumber) {
+                } else if (userPredicted > generatedNumber) {
                     System.out.println("Please pick a lower number.");
                     // Capture new user's guess
                     youGuessed = new YourGuess();
-                    youPredicted = youGuessed.getYourGuess();
+                    userPredicted = youGuessed.getYourGuess();
                     validGuess = validGuess + 1;
                     guessAttempt = guessAttempt + 1;
                 }
-                if (youPredicted == generatedNumber) {
+                if (userPredicted == generatedNumber) {
                     System.out.println("You win! ");
                     validGuess = validGuess + 1;
                     guessAttempt = guessAttempt + 1;
